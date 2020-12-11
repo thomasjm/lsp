@@ -8,6 +8,7 @@ module Language.LSP.Types.LspId where
 
 import qualified Data.Aeson                                 as A
 import           Data.Text                                  (Text)
+import           Data.Hashable
 import           Data.IxMap
 import Language.LSP.Types.Method
 
@@ -37,3 +38,5 @@ instance Eq SomeLspId where
   SomeLspId a == SomeLspId b = toBase a == toBase b
 instance Ord SomeLspId where
   SomeLspId a `compare` SomeLspId b = toBase a `compare` toBase b
+instance Hashable SomeLspId where
+  hashWithSalt n (SomeLspId a) = hashWithSalt n (toBase a)
