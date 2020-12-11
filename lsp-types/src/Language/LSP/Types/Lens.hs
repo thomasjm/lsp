@@ -65,9 +65,6 @@ makeFieldsNoPrefix ''SignatureHelpSignatureInformation
 makeFieldsNoPrefix ''SignatureHelpParameterInformation
 makeFieldsNoPrefix ''SignatureHelpClientCapabilities
 makeFieldsNoPrefix ''ReferencesClientCapabilities
-makeFieldsNoPrefix ''DefinitionClientCapabilities
-makeFieldsNoPrefix ''TypeDefinitionClientCapabilities
-makeFieldsNoPrefix ''ImplementationClientCapabilities
 makeFieldsNoPrefix ''PublishDiagnosticsClientCapabilities
 makeFieldsNoPrefix ''PublishDiagnosticsTagsClientCapabilities
 makeFieldsNoPrefix ''TextDocumentClientCapabilities
@@ -103,8 +100,6 @@ makeFieldsNoPrefix ''PublishDiagnosticsParams
 makeFieldsNoPrefix ''LanguageString
 makeFieldsNoPrefix ''ParameterInformation
 makeFieldsNoPrefix ''SignatureInformation
-makeFieldsNoPrefix ''SignatureHelp
-makeFieldsNoPrefix ''SignatureHelpRegistrationOptions
 makeFieldsNoPrefix ''ReferenceContext
 makeFieldsNoPrefix ''ReferenceParams
 makeFieldsNoPrefix ''ExecuteCommandParams
@@ -141,6 +136,7 @@ makeFieldsNoPrefix ''WorkspaceSymbolParams
 makeFieldsNoPrefix ''Position
 makeFieldsNoPrefix ''Range
 makeFieldsNoPrefix ''Location
+makeFieldsNoPrefix ''LocationLink
 
 -- Completion
 makeFieldsNoPrefix ''CompletionItem
@@ -286,7 +282,24 @@ makeFieldsNoPrefix ''DiagnosticRelatedInformation
 -- Hover
 makeFieldsNoPrefix ''Hover
 makeFieldsNoPrefix ''HoverRegistrationOptions
+makeFieldsNoPrefix ''HoverParams
 
+-- Signature help
+makeFieldsNoPrefix ''SignatureHelp
+makeFieldsNoPrefix ''SignatureHelpRegistrationOptions
+makeFieldsNoPrefix ''SignatureHelpParams
+
+-- Definition
+makeFieldsNoPrefix ''DefinitionClientCapabilities
+makeFieldsNoPrefix ''DefinitionParams
+
+-- Type definition
+makeFieldsNoPrefix ''TypeDefinitionClientCapabilities
+makeFieldsNoPrefix ''TypeDefinitionParams
+
+-- Implementation
+makeFieldsNoPrefix ''ImplementationClientCapabilities
+makeFieldsNoPrefix ''ImplementationParams
 
 -- Window
 makeFieldsNoPrefix ''ShowMessageParams
