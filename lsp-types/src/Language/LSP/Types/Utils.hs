@@ -8,6 +8,7 @@ module Language.LSP.Types.Utils
   , makeRegHelper
   , makeExtendingDatatype
   , lspOptions
+  , lspOptionsNoOmitNothingFields
   ) where
 
 import Control.Monad
