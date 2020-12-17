@@ -53,7 +53,7 @@ makeExtendingDatatype "InitializeParams" [''WorkDoneProgressParams]
 
 {-# DEPRECATED _rootPath "Use _rootUri" #-}
 
-deriveJSON lspOptions ''InitializeParams
+deriveJSON lspOptionsNoOmitNothingFields ''InitializeParams
 
 data InitializeError =
   InitializeError

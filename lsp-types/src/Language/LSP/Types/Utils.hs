@@ -116,3 +116,5 @@ lspOptions = defaultOptions { omitNothingFields = True, fieldLabelModifier = mod
   modifier "_xtype" = "type"
   modifier xs = drop 1 xs
 
+lspOptionsNoOmitNothingFields :: Options
+lspOptionsNoOmitNothingFields = lspOptions { omitNothingFields = False }
